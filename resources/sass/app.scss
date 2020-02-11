@@ -1,0 +1,93 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+    background: #f2709c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h3, h5 {
+    margin: 0;
+}
+button {
+    padding: 0 20px;
+}
+.loading {
+    font-weight: bold;
+    text-align: center;
+}
+.container {
+    > div {
+        background: white;
+        box-shadow: 0 16px 20px rgba(0, 0, 0, .2);
+        overflow: hidden;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        padding: 20px;
+        width: 50%;
+        margin: 5rem auto 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+        > div {
+            display: inline-block;
+            &:nth-child(1) {
+                width: 65%;
+            }
+            &:nth-child(2) {
+                width: 35%;
+            }
+        }
+    }
+}
+.bordered {
+    > tbody {
+        > tr {
+            > td {
+                border-left: 1px solid #ccc;
+                border-top: 1px solid #ccc;
+                &:last-child {
+                    border-right: 1px solid #ccc;
+                }
+            }
+            &:nth-child(2) {
+                > td {
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+            &:last-child {
+                td {
+                    border: 0 none;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
+#league_table {
+    tr.data {
+        td {
+            padding: 3px 5px;
+            border-right: 1px solid #ccc;
+            &:last-child {
+                border-right: 0 none;
+            }
+        }
+    }
+}
+#prediction {
+    display: none;
+    border: 1px solid #ccc;
+    td {
+        padding: 4px 10px;
+    }
+}
+.match-result-wrapper {
+    padding: 5px 15px;
+}
